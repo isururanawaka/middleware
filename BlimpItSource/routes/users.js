@@ -1,4 +1,4 @@
-var mongoAdapter = require('../dbAdapters/mongoAdapter');
+var mongoAdapter = require('../dbadapters/mongoAdapter');
 var config = require('../config/configLocal.js');
 exports.addUsers = function (req, res) {
    mongoAdapter.insertDocument(config.mongodb.collections.users, {name:"name"}, config.mongodb.centralDB, function (error, id) {

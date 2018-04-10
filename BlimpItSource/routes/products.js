@@ -1,4 +1,4 @@
-var mongoAdapter = require('../dbAdapters/mongoAdapter');
+var mongoAdapter = require('../dbadapters/mongoAdapter');
 var config = require('../config/configLocal.js');
 exports.addProducts = function (req, res) {
     var product = req.body.product;
